@@ -16,7 +16,7 @@ The rules are defined in [`stylelint.json`](stylelint.json). Complete list of St
 ## Installation
 
 ```yaml
-npm i https://github.com/radek-altof/lint-config.git --save-dev
+npm i @radek-altof/lint-config --save-dev
 ```
 
 
@@ -26,7 +26,7 @@ Extend your ESLint and Stylelint config files. Ex.:
 
 ```json
 {
-  "extends": ["./node_modules/@radek-altof/lint-config/eslint.json"]
+	"extends": ["./node_modules/@radek-altof/lint-config/eslint.json"]
 } 
 ```
 

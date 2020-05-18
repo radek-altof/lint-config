@@ -1,9 +1,31 @@
 {
-  "name": "@radek-altof/lint-config",
-  "version": "0.1.0",
-  "dependencies": {
-    "eslint": "^5.16.0",
-    "stylelint": "^10.1.0",
-    "stylelint-scss": "^3.8.0"
-  }
+	"name": "@radek-altof/lint-config",
+	"version": "1.0.0",
+	"description": "Custom ESlint & Stylelint configuration",
+	"repository": {
+		"type": "git",
+	  	"url": "https://github.com/radek-altof/lint-config.git"
+	},
+	"keywords": [
+		"eslint",
+		"stylelint",
+		"config",
+		"javascript",
+		"styleguide"
+	],
+	"author": {
+		"name": "Radek Altof",
+		"email": "radek.altof@gmail.com",
+		"url": "http://radekaltof.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/radek-altof/lint-config/issues"
+	},
+	"homepage": "https://github.com/radek-altof/lint-config#readme",
+	"dependencies": {
+		"eslint": "^5.16.0",
+		"stylelint": "^10.1.0",
+		"stylelint-scss": "^3.8.0"
+	}
 }

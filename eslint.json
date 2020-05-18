@@ -94,7 +94,7 @@
 		"block-spacing": ["error", "always"],
 		"brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
 		"camelcase": ["error", { "properties": "always" }],
-		"comma-dangle": ["error", "always"],
+		"comma-dangle": ["error", "always-multiline"],
 		"comma-spacing": ["error", { "before": false, "after": true }],
 		"comma-style": ["error", "last"],
 		"eol-last": ["error", "always"],

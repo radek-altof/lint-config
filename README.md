@@ -1,2 +1,73 @@
-# lint-config
-Custom ESlint &amp; stylelint configuration.
+# Linting configuration
+
+Custom ESlint & Stylelint configuration.
+
+
+## ESLint
+
+The rules are defined in [`eslint.json`](eslint.json). Complete list of ESLint rules can be found here: https://eslint.org/docs/rules/
+
+
+## Stylelint
+
+The rules are defined in [`stylelint.json`](stylelint.json). Complete list of Stylelint rules can be found here: https://stylelint.io/user-guide/rules/
+
+
+## Installation
+
+```yaml
+npm i https://github.com/radek-altof/lint-config.git --save-dev
+```
+
+
+## Configuration
+
+Extend your ESLint and Stylelint config files. Ex.:
+
+```json
+{
+  "extends": ["./node_modules/@radek-altof/lint-config/eslint.json"]
+} 
+```
+
+
+## Grunt
+
+Install grunt dependencies.
+
+```yaml
+npm i grunt-eslint --save-dev
+npm i grunt-stylelint --save-dev
+```
+
+Update `gruntfile.js` in your project.
+
+```js
+grunt.initConfig({
+	eslint: {
+		options: {
+			configFile: 'eslint.json',
+			fix: grunt.option('fix')
+		},
+		target: ['js/*.js']
+	},
+	stylelint: {
+		options: {
+			configFile: 'stylelint.json',
+			syntax: 'scss',
+			fix: grunt.option('fix')
+		},
+		src: [ 'css/*.scss' ]
+	}
+});
+```
+
+Lint your code.
+
+```yaml
+grunt eslint 
+```
+
+```yaml
+grunt stylelint
+```

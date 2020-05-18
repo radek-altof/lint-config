@@ -15,8 +15,8 @@ The rules are defined in [`stylelint.json`](stylelint.json). Complete list of St
 
 ## Installation
 
-```yaml
-npm i @radek-altof/lint-config --save-dev
+```
+$ npm i @radek-altof/lint-config --save-dev
 ```
 
 
@@ -35,9 +35,9 @@ Extend your ESLint and Stylelint config files. Ex.:
 
 Install grunt dependencies.
 
-```yaml
-npm i grunt-eslint --save-dev
-npm i grunt-stylelint --save-dev
+```
+$ npm i grunt-eslint --save-dev
+$ npm i grunt-stylelint --save-dev
 ```
 
 Update `gruntfile.js` in your project.
@@ -64,10 +64,10 @@ grunt.initConfig({
 
 Lint your code.
 
-```yaml
-grunt eslint 
+```
+$ grunt eslint 
 ```
 
-```yaml
-grunt stylelint
+```
+$ grunt stylelint
 ```

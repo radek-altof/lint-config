@@ -1,10 +1,10 @@
 {
 	"name": "@radek-altof/lint-config",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Custom ESlint & Stylelint configuration",
 	"repository": {
 		"type": "git",
-	  	"url": "https://github.com/radek-altof/lint-config.git"
+		"url": "https://github.com/radek-altof/lint-config.git"
 	},
 	"keywords": [
 		"eslint",

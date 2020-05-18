@@ -1,0 +1,9 @@
+{
+  "name": "@radek-altof/lint-config",
+  "version": "0.1.0",
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "stylelint": "^10.1.0",
+    "stylelint-scss": "^3.8.0"
+  }
+}

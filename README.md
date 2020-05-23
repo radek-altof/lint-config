@@ -15,7 +15,7 @@ The rules are defined in [`stylelint.json`](stylelint.json). Complete list of St
 
 ## Installation
 
-```
+```sh
 $ npm i @radek-altof/lint-config --save-dev
 ```
 
@@ -26,7 +26,7 @@ Extend your ESLint and Stylelint config files. Ex.:
 
 ```json
 {
-	"extends": ["./node_modules/@radek-altof/lint-config/eslint.json"]
+  "extends": ["./node_modules/@radek-altof/lint-config/eslint.json"]
 } 
 ```
 
@@ -35,39 +35,39 @@ Extend your ESLint and Stylelint config files. Ex.:
 
 Install grunt dependencies.
 
-```
+```sh
 $ npm i grunt-eslint --save-dev
 $ npm i grunt-stylelint --save-dev
 ```
 
 Update `gruntfile.js` in your project.
 
-```js
+```javascript
 grunt.initConfig({
-	eslint: {
-		options: {
-			configFile: 'eslint.json',
-			fix: grunt.option('fix')
-		},
-		target: ['js/*.js']
-	},
-	stylelint: {
-		options: {
-			configFile: 'stylelint.json',
-			syntax: 'scss',
-			fix: grunt.option('fix')
-		},
-		src: [ 'css/*.scss' ]
-	}
+  eslint: {
+    options: {
+      configFile: 'eslint.json',
+      fix: grunt.option('fix')
+    },
+    target: ['js/*.js']
+  },
+  stylelint: {
+    options: {
+      configFile: 'stylelint.json',
+      syntax: 'scss',
+      fix: grunt.option('fix')
+    },
+    src: [ 'css/*.scss' ]
+  }
 });
 ```
 
 Lint your code.
 
-```
+```sh
 $ grunt eslint 
 ```
 
-```
+```sh
 $ grunt stylelint
 ```
